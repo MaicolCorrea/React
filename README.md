@@ -1,12 +1,55 @@
-# React + Vite
+# Triki (Tic-tac-toe) Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern implementation of the classic Tic-tac-toe game built with React and Vite.
 
-Currently, two official plugins are available:
+## 🎮 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive game board
+- Turn tracking system
+- Winner detection
+- Draw detection
+- Victory celebration with confetti
+- Reset game functionality
+- Responsive design
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- Canvas Confetti
+- CSS3
+
+## 🚀 Getting Started
+
+1. Clone this repository
+2. Install dependencies:
+```sh
+npm install
+```
+3. Run the development server:
+```sh
+npm run dev
+```
+
+## 🎯 How to Play
+
+1. The game is played on a 3x3 grid
+2. Players take turns placing X or O in empty squares
+3. The first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) wins
+4. When all squares are filled and no winner is determined, the game ends in a draw
+
+## 💻 Development
+
+To build for production:
+```sh
+npm run build
+```
+
+To preview the production build:
+```sh
+npm run preview
+```
+
+## 🤝 Contributing
+
+Feel free to fork this project and create a pull request with your improvements!
