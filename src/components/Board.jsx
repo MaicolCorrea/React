@@ -11,6 +11,11 @@ export function Board({ board, setBoard, turn, setTurn, setWinner }) {
     newBoard[index] = turn;
     setBoard(newBoard);
 
+    const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
+
+    window.localStorage.setItem("board", JSON.stringify(newBoard));
+    window.localStorage.setItem("turn", newTurn);
+
     const newWinner = checkWinnerFrom(newBoard);
     if (newWinner) {
       confetti();
@@ -19,7 +24,6 @@ export function Board({ board, setBoard, turn, setTurn, setWinner }) {
       setWinner(false);
     }
 
-    const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
     setTurn(newTurn);
   };
 
