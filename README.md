@@ -47,10 +47,10 @@ src/
 ## 🎯 Ejemplo de Uso
 ```jsx
 <TwitterFollowCard 
-  userName="midudev"
+  userName="mcorre10"
   initialIsFollowing={false}
 >
-  Miguel Ángel Durán
+  Michael Correa
 </TwitterFollowCard>
 ```
 
@@ -64,6 +64,3 @@ Las contribuciones son bienvenidas. Por favor:
 
 ## 📄 Licencia
 MIT License - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
-
-## 🙋‍♂️ Autor
-[Tu Nombre]
