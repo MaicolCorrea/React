@@ -1,12 +1,69 @@
-# React + Vite
+# Twitter Follow Card Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción
+Este proyecto es un clon de la funcionalidad de las tarjetas de "Follow" de Twitter, implementado con React. Demuestra el uso de componentes modernos, estados y manejo de eventos.
 
-Currently, two official plugins are available:
+## ✨ Características
+- Tarjetas de usuario estilo Twitter
+- Botón de Follow/Unfollow con estado dinámico
+- Avatares dinámicos usando la API de unavatar.io
+- Efectos visuales en la interacción de botones
+- Manejo de estados con React Hooks (useState)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías
+- React 18
+- Vite
+- CSS Modules
+- unavatar.io API
 
-## Expanding the ESLint configuration
+## 💻 Instalación y Uso
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clona el repositorio:
+```bash
+git clone <tu-repositorio>
+cd 00-hello-world
+```
+
+2. Instala las dependencias:
+```bash
+npm install
+```
+
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
+
+## 🔍 Estructura del Proyecto
+```
+src/
+├── App.jsx          # Componente principal
+├── App.css          # Estilos principales
+├── main.jsx         # Punto de entrada
+├── TwitterFollowCard.jsx  # Componente de tarjeta
+└── index.css        # Estilos globales
+```
+
+## 🎯 Ejemplo de Uso
+```jsx
+<TwitterFollowCard 
+  userName="midudev"
+  initialIsFollowing={false}
+>
+  Miguel Ángel Durán
+</TwitterFollowCard>
+```
+
+## 🤝 Contribuciones
+Las contribuciones son bienvenidas. Por favor:
+1. Haz Fork del proyecto
+2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`)
+3. Haz commit de tus cambios (`git commit -m 'Agrega nueva característica'`)
+4. Push a la rama (`git push origin feature/nueva-caracteristica`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+MIT License - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+## 🙋‍♂️ Autor
+[Tu Nombre]
